@@ -1,16 +1,36 @@
 $main-bg: #171718
+$secundary-bg: #fff
+$secundary-bg-2: #f7f7f7
 $main-font: #f8f9fa
-//$main-bg: #fff
-//$main-font: #171718
+$secundary-font: #666
     
+.btn-rounded
+    border-radius: 30px
+
+.btn-circle
+    width: 60px;
+    height: 60px;
+    i
+        font-size: 30px;
+        margin-top: 10px;
+    &:hover
+        background: #fff
+        border-color: #fff
+        i
+            color: #007bff
+
+a
+    color: #fff !important
+
 body
     background: $main-bg
     h1
         font-family: 'Raleway', sans-serif;
         font-weight: 500
         color: $main-font
+        
 .navbar
-        background-color: rgba(23, 23, 24, .95);
+    background-color: rgba(23, 23, 24, .95);
 
 header
     height: 100vh
@@ -25,40 +45,70 @@ header
         max-width: 600px
         display: table
         margin: 0 auto
+    @media (max-width: 767.98px)
+        height: 100%
+        padding-bottom: 20px
+        img
+            max-width: 280px
+            display: table
+            margin: 0 auto
     button
         display: block !important
         margin: 40px auto 0 auto !important
 
 .posts
-    margin-top: 80px
+    box-shadow: inset 0 -1px 11px rgba(124,146,169,0.5)
+    background: $secundary-bg-2
+    padding-top: 60px
+    padding-bottom: 40px
     h1
         display: table
         margin: 0 auto
+        color: $secundary-font
     .row
         padding-top: 100px
+        @media (max-width: 767.98px)
+            padding-top: 30px
+            text-align: center
+            h3
+                padding-top: 40px
+            p
+                padding-top: 10px
         img
             max-width: 500px
         h3, h5, p
-            color: $main-font
+            color: $secundary-font
+        @media (max-width: 767.98px)
+            img
+                max-width: 280px
+                display: table
+                margin: 0 auto
     button
+        padding: 8px 12px
+        font-size: 18px
         display: block !important
         margin: 40px auto 0 auto !important
 
 .overview
-    height: 100vh
+    background: $secundary-bg
     h1
         display: table
         margin: 0 auto
-        padding-top: 150px
+        padding-top: 100px
+        color: $secundary-font
+        @media (max-width: 767.98px)
+            padding-top: 40px
     .row
         padding-top: 100px
+        @media (max-width: 767.98px)
+            padding-top: 20px !important
         .col-lg-6
             padding-bottom: 150px
             h2
                 padding-top: 40px
-                color: $main-font
+                color: $secundary-font
             p
-                color: $main-font
+                color: $secundary-font
                 font-size: 18px
             img
                 max-width: 475px
@@ -66,3 +116,56 @@ header
                     max-width: 475px
                 &#firmware
                     max-width: 475px
+            @media (max-width: 767.98px)
+                text-align: center
+                padding-bottom: 50px
+                h2
+                    padding-top: 20px
+                img
+                    display: table
+                    margin: 0 auto
+                    max-width: 280px
+                    &#science
+                        max-width: 280px
+                    &#firmware
+                        max-width: 280px
+
+.sign-in
+    background: linear-gradient(270deg,#6c63ff,#4641ff)
+    height: 350px
+    text-align: center
+    padding: 120px 0 280px 0
+    color: #fff
+    p
+        padding-top: 10px
+    button
+        margin-top: 20px
+        font-size: 20px
+        padding: 6pt 20pt
+
+footer
+    background: #252526
+    padding: 30px 0 10px 0;
+    color: #fff
+    text-align: center
+    a
+        color: #fff
+        &:hover
+            color: #fff
+
+.popup
+    width: 100%
+    padding: 10px 0 5px 0
+    text-align: center
+    position: fixed
+    bottom: 0
+    color: #fff
+    background: #222222
+
+.modal-dialog
+    max-width: 80%
+    .modal-body
+        h1
+            color: #000
+        ul
+            padding-bottom: 20px

@@ -7,7 +7,8 @@
     <title>FVTHK</title>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900&amp;subset=latin-ext" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -26,7 +27,7 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="padding-top: 3px"><button class="btn btn-primary">Prihlasit se</button></a>
+                        <a class="nav-link" href="#" style="padding-top: 3px"><button class="btn btn-primary btn-rounded">Prihlasit se</button></a>
                     </li>
                 </ul>
             </div>  
@@ -37,7 +38,7 @@
         <div class="container">
             <h1>Festival vědy a techniky po děti a mládež v Pardubickém kraji</h1>
             <img src="/assets/undraw_team_spirit_hrr4.svg" alt="">
-            <button class="btn btn-primary">Prihlasit se do soutěže</button>
+            <button class="btn btn-primary btn-rounded btn-circle"><i class="material-icons">keyboard_arrow_down</i></button>
         </div>
     </header>
     
@@ -66,7 +67,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn-primary">Zobrazit dalsi</button>
+            <button class="btn btn-primary btn-rounded">Zobrazit dalsi</button>
         </div>
     </section>
 
@@ -74,37 +75,126 @@
         <div class="container">
             <h1>O soutěžich</h1>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-1 order-2">
                     <h2>AMAVET</h2>
                     <p>Soutěž, ve které se napříč vědními obory sejdou projekty, aby se mohl vyhodnotit ten nejlepší ze svého oboru. Soutěží se v jednotlivcích, nebo v týmu až 3 lidí. Ti nejlepší řešitelé se podívají do zahraničí, někteří na EXPO SCIENCE AMAVET, aby obhájili svuj projekt na mezinárodní úrovni. </p>
+                    <a class="btn btn-primary btn-rounded">Prejit na Amavet</a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-2 order-1">
                     <img src="/assets/undraw_science_fqhl.svg" id="science" alt="">    
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-3 order-3">
                     <img src="/assets/undraw_firmware_mf69.svg" id="firmware" alt="">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-4 order-4">
                     <h2>RoboRAVE</h2>
                     <p>Soutěž zaměřená na edukaci žáků a učitelů v oblasti designování, stavby a programování robotů, kteří pak budou soutěžit v plnění nejrůznějších úkolu. Dá se přihlásit s týmy dětí ve věku od 8 do 18 let, kde můžou předvést co v nich je!</p>
+                    <a class="btn btn-primary btn-rounded">Prejit na RoboRAVE</a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-5 order-6">
                     <h2>Ceny</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit animi molestias esse consectetur fugiat natus laboriosam quos error quas. Hic consectetur architecto repellat illum nisi pariatur laborum voluptate deleniti corrupti.</p>
+                    <p>Účastníci soutěže v kategorii JUNIOR mají možnost účasti na krátkodobé odborné zahraniční stáži ve Francii. V kategorii Středoškolák účastníci postupují do národního finále soutěže a mají možnost postoupit do soutěže INTEL ISEF v USA. Dále je jim poskytnuto stipendium pokud se rozhodnou ke studiu na Pardubických Fakultách.</p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-6 order-5">
                     <img src="/assets/undraw_winners_2yls.svg" alt="">    
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <section class="sign-in">
+        <h3>Prihlaste se do souteze</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, delectus.</p>
+        <button class="btn btn-primary btn-rounded">
+            Prihlasit se
+        </button>
+    </section>
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p>Amavet: <a href="http://www.amavet.cz/">http://amavet.cz</a></p>
+                </div>
+                <div class="col-md-3">
+                    <p>RoboRAVE <a href="https://www.roborave.org/">https://roborave.org</a></p>
+                </div>
+                <div class="col-md-3">
+                    <p>Kontakt: email@email.email</p>
+                </div>
+                <div class="col-md-3">
+                    <p><button class="btn btn-primary btn-rounded" data-toggle="modal" data-target="#exampleModalCenter">Smluvni podminky</button></p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <div class="popup d-none" id="popup">
+        <p>
+            Tento web používá k poskytování služeb, personalizaci reklam a 
+            analýze návštěvnosti soubory cookie. Používáním tohoto webu s tím souhlasíte.
+            <button onclick="setPersonalDataCookie()">Souhlasim</button>
+        </p>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Souhlas se zpracováním osobních údajů</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>
+                        <p>Uděluji tímto souhlas Asociaci pro mládež, vědu a techniku AMAVET, z.s. se sídlem Starochodovská 1360/78, 149 00 Praha 4 – Chodov, IČ00564613 (dále jen „správce“), aby ve smyslu nařízení č. 679/2016 o ochraně osobních údajů fyzických osob (dále jen „GDPR“) zpracovával tyto osobní údaje:</p>
+                        <ul>
+                            <li>Jméno a příjmení</li>
+                            <li>Rodné číslo</li>
+                            <li>Bydliště (ulice a číslo popisné, město a PSČ)</li>
+                            <li>E-mail</li>
+                            <li>Telefonní číslo</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Tyto osobní údaje je nutné zpracovat pro účel vytvoření seznamu projektů, vyhlášení výherce a ostatní věci spojené se soutěží. Údaje budou správcem zpracovány po dobu trvání soutěže a následné archivaci po dobu 10 let. </p>
+                    </li>
+                    <li>
+                        <p>S výše uvedeným zpracováním uděluji výslovný souhlas. Souhlas lze vzít kdykoliv zpět a to například zasláním e-mailu nebo dopisu na emailovou adresu amavet@amavet.cz s požadavkem na smazání. </p>
+                    </li>
+                    <li>
+                        <p>Zpracování osobních údajů je prováděno Správcem, osobní údaje však pro správce mohou zpracovávat i tito zpracovatelé:</p>
+                        <ul>
+                            <li>Správci databází</li>
+                            <li>Organizátoři soutěže</li>
+                            <li>Zaměstnanci připravující podklady pro soutěž</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Dle GDPR máte právo:</p>
+                        <ul>
+                            <li>Vzít souhlas kdykoliv zpět</li>
+                            <li>Požadovat informaci, jaké vaše osobní údaje zpracováváme</li>
+                            <li>Požádat vysvětlení ohledně zpracování osobních údajů</li>
+                            <li>Vyžádat si přístup k těmto údajům a tyto nechat aktualizovat nebo opravit</li>
+                            <li>Požadovat opravu, výmaz osobních údajů a vznést námitku proti zpracování</li>
+                        </ul>
+                    </li>
+                </ol>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
