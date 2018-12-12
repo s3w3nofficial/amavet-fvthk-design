@@ -14,3 +14,9 @@ function setPersonalDataCookie() {
     document.cookie = 'personalData=true'
     $('#popup').addClass('d-none')
 }
+
+function scrollButton() {
+    $('html,body').animate({
+        scrollTop: $(".posts").offset().top - 40
+    });
+}
